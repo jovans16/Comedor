@@ -41,11 +41,23 @@ CORS(app)
 #ejemplo de como definir las rutas o vistas a usar
 @app.route('/inicio')
 def inicio():
-    return render_template('inicio.html')
+    return render_template('inicio.php')
         
-@app.route('/vista2')
-def vista2():
-    return render_template('vista2.html')
+@app.route('/panel')
+def panel():
+    return render_template('panel.php')
+
+
+@app.route('/contraseña')
+def contraseña():
+    return render_template('contraseña.php')
+
+@app.route('/control')
+def control():
+    return render_template('control.php')
+
+
+
 
 
 if __name__ == '__main__':
